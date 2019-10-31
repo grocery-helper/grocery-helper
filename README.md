@@ -19,7 +19,7 @@ Grocery Helper will:
 
 # Built With
 - [Swift](https://developer.apple.com/swift/)
-- [MySQl](https://www.mysql.com/)
+- [MySQL](https://www.mysql.com/)
 - [PHP](https://www.php.net/)
 
 
