@@ -14,8 +14,7 @@ Grocery Helper will:
 
 # Getting Started
 < This will have instructions on how to setup this app on your local machine! 
-  Possible sub-headings: Pre-requisites, Installation
->
+  Possible sub-headings: Pre-requisites, Installation >
 
 
 # Built With
