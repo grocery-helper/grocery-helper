@@ -3,7 +3,7 @@ How many times have you gone grocery shopping and stocked up only to throw out u
 
 
 <div align="center">
-![Alt Text](http://giphygifs.s3.amazonaws.com/media/14aUO0Mf7dWDXW/giphy.gif)
+<img src="http://giphygifs.s3.amazonaws.com/media/14aUO0Mf7dWDXW/giphy.gif">
 </div>
 
 
