@@ -1,8 +1,9 @@
 # Grocery Helper
 How many times have you gone grocery shopping and stocked up only to throw out unconsumed expired products by the next trip?
+![Alt Text](http://gph.is/19lfu4P)
+
+
 We know that heart break. So, we built Grocery Helper!
-
-
 Grocery Helper is an iPhone app which helps you track your purchases so, you can minimize food waste! 
 
 
