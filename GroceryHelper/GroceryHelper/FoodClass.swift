@@ -7,30 +7,23 @@
 
 import Foundation
 
-//maybe struct calender instead? performs calender arithmetic
-struct Calendar {
-    
-}
-
-
-
 class FoodItem{
-    var foodName: String = ""
+    var foodName: String
     var purchaseDate: Date
     var expirationDate: Date
-    var shelfLifeInDays: Int = 0
-    var inGroceryList: Bool = false
-    var inInventoryList: Bool = false
-    var inFavoritesList: Bool = false
+    var shelfLifeInDays: Int
+    var inGroceryList: Bool
+    var inInventoryList: Bool
+    var inFavoritesList: Bool
     
     func getName() -> String {
-        return self.foodName
+        return this.foodName
     }
     func getPurchaseDate() -> String {
-        return self.purchaseDate
+        return this.purchaseDate
     }
     func getShelfLife() -> String {
-        return self.shelfLifeInDays
+        return this.shelfLife
     }
     func isInGroceryList() -> Bool  {
         //if in grocerylist -> return true
@@ -44,20 +37,20 @@ class FoodItem{
         //if in favorites list return true
         //else return false
     }
-    func setExpirationDate() { //takes the shelf life and adds it to the purchase date
-        self.expirationDate = self.purchaseDate + self.shelfLifeInDays
+    void setExpirationDate() { //takes the shelf life and adds it to the purchase date
+        this.expirationDate = this.purchaseDate + this.shelfLife
     }
     func addToGroceryList() {
         //add to grocery list DB
-        self.inGroceryList = true
+        this.inGroceryList = true
     }
     func addToInventoryList(){
         //add to inventory list DB
-        self.inInventoryList = true
+        this.inInventoryList = true
     }
     func addToFavoritesList() {
         //add to favorites list DB
-        self.inFavoritesList = true
+        this.inFavoritesList = true
     }
     
 }

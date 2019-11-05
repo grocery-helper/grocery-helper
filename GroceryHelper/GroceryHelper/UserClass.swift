@@ -9,31 +9,32 @@ import Foundation
 
 class User{
     
-    var userName: String = ""
-    var Password: String = ""
+    var userName: string
+    var Password: string
     
     func getName() -> String{
-        return self.userName
+        return this.userName
     }
+    
     func deleteUser() {
-        self = nil
+        this = nil
     }
     func changePassword(pass:String, newPass:String){
-        if (pass == self.Password){
-            self.Password = newPass
+        if (pass == this.Password){
+            this.Password = newPass
         }
         else {
             //display ‘incorrect password’
         }
     }
     func Login(pass: String, uname: String) -> Bool{
-        if (pass == self.Password && uname == self.userName){
-            print("Login Successful")
-            return true //proceed to next screen
+        if (pass == this.Password && uname == this.userName){
+            print(“Login Successful”)
+            Return true //proceed to next screen
         }
         else {
-            print("Username or password is incorrect")
-            return false
+            print(“Username or password is incorrect”)
+            Return false
         }
     }
     func Logout(){

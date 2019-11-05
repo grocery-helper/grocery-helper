@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5402B6B23723CAC00601A9A /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5402B6A23723CAC00601A9A /* UserClass.swift */; };
+		F5402B6D23723CBB00601A9A /* FoodClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5402B6C23723CBB00601A9A /* FoodClass.swift */; };
 		F587C7C8236B943000098F02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587C7C7236B943000098F02 /* LoginViewController.swift */; };
 		F587C7CA236B944B00098F02 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587C7C9236B944B00098F02 /* SettingsViewController.swift */; };
 		F5A5CBB9236A8E4F0042C833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5CBB8236A8E4F0042C833 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5402B6A23723CAC00601A9A /* UserClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserClass.swift; path = ../../UserClass.swift; sourceTree = "<group>"; };
+		F5402B6C23723CBB00601A9A /* FoodClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodClass.swift; path = ../../FoodClass.swift; sourceTree = "<group>"; };
 		F587C7C7236B943000098F02 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F587C7C9236B944B00098F02 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F5A5CBB5236A8E4F0042C833 /* GroceryHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,8 @@
 				F5A5CBD2236A8F860042C833 /* FavoritesViewController.swift */,
 				F587C7C7236B943000098F02 /* LoginViewController.swift */,
 				F587C7C9236B944B00098F02 /* SettingsViewController.swift */,
+				F5402B6A23723CAC00601A9A /* UserClass.swift */,
+				F5402B6C23723CBB00601A9A /* FoodClass.swift */,
 				F5A5CBBE236A8E4F0042C833 /* Main.storyboard */,
 				F5A5CBC1236A8E510042C833 /* Assets.xcassets */,
 				F5A5CBC3236A8E510042C833 /* LaunchScreen.storyboard */,
@@ -155,9 +161,11 @@
 			files = (
 				F587C7C8236B943000098F02 /* LoginViewController.swift in Sources */,
 				F5A5CBBD236A8E4F0042C833 /* HomeViewController.swift in Sources */,
+				F5402B6D23723CBB00601A9A /* FoodClass.swift in Sources */,
 				F5A5CBB9236A8E4F0042C833 /* AppDelegate.swift in Sources */,
 				F5A5CBD1236A8F700042C833 /* GroceryViewController.swift in Sources */,
 				F5A5CBCF236A8F540042C833 /* InventoryViewController.swift in Sources */,
+				F5402B6B23723CAC00601A9A /* UserClass.swift in Sources */,
 				F5A5CBD3236A8F860042C833 /* FavoritesViewController.swift in Sources */,
 				F5A5CBBB236A8E4F0042C833 /* SceneDelegate.swift in Sources */,
 				F587C7CA236B944B00098F02 /* SettingsViewController.swift in Sources */,
