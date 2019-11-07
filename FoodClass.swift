@@ -7,45 +7,54 @@
 
 import Foundation
 
-//maybe struct calender instead? performs calender arithmetic
-struct Calendar {
-    
-}
-
-
-
 class FoodItem{
-    var foodName: String = ""
-    var purchaseDate: Date
-    var expirationDate: Date
-    var shelfLifeInDays: Int = 0
-    var inGroceryList: Bool = false
-    var inInventoryList: Bool = false
-    var inFavoritesList: Bool = false
+    
+    var foodName: String
+    var purchaseDate: NSDate
+    var expirationDate: NSDate
+    var shelfLifeInDays: Double
+    var inGroceryList: Bool
+    var inInventoryList: Bool
+    var inFavoritesList: Bool
+    
+    init() {
+        foodName = ""
+        purchaseDate = NSDate()
+        expirationDate = NSDate()
+        shelfLifeInDays = 0
+        inGroceryList = false
+        inInventoryList = false
+        inFavoritesList = false
+    }
     
     func getName() -> String {
         return self.foodName
     }
-    func getPurchaseDate() -> String {
+    func getPurchaseDate() -> NSDate {
         return self.purchaseDate
     }
-    func getShelfLife() -> String {
+    func getShelfLife() -> Double {
         return self.shelfLifeInDays
     }
     func isInGroceryList() -> Bool  {
         //if in grocerylist -> return true
         //else return false
+        return false
     }
     func isInInventoryList() -> Bool  {
         //if in inventory list -> return true
         //else return false
+        return false
     }
     func isInFavoritesList() -> Bool  {
         //if in favorites list return true
         //else return false
+        return false
     }
     func setExpirationDate() { //takes the shelf life and adds it to the purchase date
-        self.expirationDate = self.purchaseDate + self.shelfLifeInDays
+        var seconds: TimeInterval
+        seconds = 86400 * self.shelfLifeInDays
+        self.expirationDate = purchaseDate.addingTimeInterval(seconds)
     }
     func addToGroceryList() {
         //add to grocery list DB
