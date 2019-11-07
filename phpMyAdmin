@@ -2,3 +2,4 @@ We used RemoteMySQL to host our database on the web so that we can use phpMyAdmi
 Use this link <https://remotemysql.com/phpmyadmin/sql.php>
 username: PVhTrKWdPv
 password: FaPy0Vt6oB
+TODO: phpMyAdmin allows us to export a SQL file that can recreate our database; we will include this in our documentation later once our database is fully updated
