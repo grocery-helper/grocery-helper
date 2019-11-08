@@ -1,0 +1,17 @@
+Development Norms: 
+
+Swift: We are using Swift for our app user interface. To open the files open the Xcode project in Xcode and use the simulator app to run the program. There are swift files and an Xcode project. 
+
+We have two Swift branches right now, the first being willows_layout.detailing the layout of our project. 
+
+The second is classes which documents the classes for our project. 
+
+
+Php: We used RemoteMySQL to host our database on the web so that we can use phpMyAdmin to manage our database.
+Use this link <https://remotemysql.com/phpmyadmin/sql.php>
+username: PVhTrKWdPv
+password: FaPy0Vt6oB
+TODO: phpMyAdmin allows us to export a SQL file that can recreate our database; we will include this in our documentation later once our database is fully updated.
+
+
+SQL: We are using a MySQL database, once it is fully up to date we plan on moving it to our repository and updating this documentation. The relationships and entities in the database are demonstrated in the ER diagram in this folder. 
