@@ -15,9 +15,9 @@ class User{
     func getName() -> String{
         return self.userName
     }
-    func deleteUser() {
-        self = nil
-    }
+//    func deleteUser() {
+//        self = nil
+//    }
     func changePassword(pass:String, newPass:String){
         if (pass == self.Password){
             self.Password = newPass

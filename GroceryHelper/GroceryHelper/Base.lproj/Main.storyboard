@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rlf-Nz-Ey3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rlf-Nz-Ey3">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -151,6 +151,16 @@
                                     <navigationItem title="Your Grocery List" id="UYl-pz-n3b"/>
                                 </items>
                             </navigationBar>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-tX-dZg">
+                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="jwW-RD-MQS"/>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="4Fc-6M-6kj"/>
+                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="5tg-zT-zKY"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="enG-9E-E4U"/>
@@ -180,6 +190,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dn-77-gYV">
+                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="adj-ZV-x6C"/>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="ooP-hR-9Tq"/>
+                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="El4-lr-Acu"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4q8-jg-VIO"/>
@@ -205,6 +225,16 @@
                                     <navigationItem title="Settings" id="obM-MY-7m7"/>
                                 </items>
                             </navigationBar>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nB-ZH-wvb">
+                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="Lhc-zN-E9e"/>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="ygF-oh-erR"/>
+                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="Nrp-K8-pdv"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4lk-t0-J8A"/>
@@ -235,6 +265,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-ae-oPc">
+                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="7L9-bj-RFZ"/>
+                                    <tabBarItem title="Home" image="house" catalog="system" selectedImage="house" id="Noa-pg-Uly"/>
+                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="ntg-aM-LfE"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rf3-Le-Ddd"/>
@@ -247,8 +287,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="house" catalog="system" width="64" height="54"/>
         <image name="inventorypic" width="1501" height="872"/>
         <image name="list" width="588" height="598"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="settings-icon-transparent-29.jpg" width="480" height="480"/>
         <image name="star" width="360" height="360"/>
     </resources>
