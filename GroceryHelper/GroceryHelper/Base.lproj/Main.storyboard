@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Swp-Ci-Bds"/>
+                                    <segue destination="6Eb-F2-lOx" kind="presentation" id="Swp-Ci-Bds"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Username" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BRr-7B-avh">
@@ -46,97 +46,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbf-Zk-jf5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-834" y="98"/>
+            <point key="canvasLocation" x="-1132" y="98"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GroceryHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to GroceryHelper!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhj-69-4FL">
-                                <rect key="frame" x="55" y="20" width="264" height="91"/>
+                                <rect key="frame" x="55" y="89" width="264" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8F-Qj-WSI">
-                                <rect key="frame" x="145" y="119" width="80" height="90"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="JNy-U0-ieX">
+                                <rect key="frame" x="43" y="209" width="99" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Grocery List" image="list"/>
-                                <connections>
-                                    <segue destination="6Pw-fS-wDx" kind="presentation" id="DVh-VJ-pbs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkm-Xd-3zQ">
-                                <rect key="frame" x="125" y="259" width="124" height="85"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="inventorypic" translatesAutoresizingMaskIntoConstraints="NO" id="9kQ-FU-Jf6">
+                                <rect key="frame" x="213" y="275" width="130" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Inventory" image="inventorypic"/>
-                                <connections>
-                                    <segue destination="HXr-4l-2wd" kind="presentation" id="Mov-4h-uld"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4J-km-pa5" userLabel="Favorites">
-                                <rect key="frame" x="134" y="389" width="102" height="88"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="WSn-ub-RYf">
+                                <rect key="frame" x="81" y="448" width="90" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Faovrites" image="star">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zBB-hO-LUB" kind="presentation" id="egI-Su-FGQ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grocery List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyP-Xv-j0f">
-                                <rect key="frame" x="138" y="217" width="93" height="21"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="settings-icon-transparent-29.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0eG-bt-XWd">
+                                <rect key="frame" x="221" y="505" width="71" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inventory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waP-6L-f1T">
-                                <rect key="frame" x="149" y="352" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF8-F0-bgL">
-                                <rect key="frame" x="150" y="485" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZc-ju-N45">
-                                <rect key="frame" x="138" y="514" width="97" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="settings-icon-transparent-29.jpg">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3wR-gq-RxN" kind="push" id="i7Z-yT-v0P"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDv-0c-vkW">
-                                <rect key="frame" x="157" y="609" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="FZ7-qy-a05"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="97.601199400299862"/>
+            <point key="canvasLocation" x="1077.5999999999999" y="-297.30134932533736"/>
         </scene>
-        <!--Grocery View Controller-->
+        <!--Grocery List-->
         <scene sceneID="AvN-zU-d7h">
             <objects>
                 <viewController id="6Pw-fS-wDx" customClass="GroceryViewController" customModule="GroceryHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,33 +97,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqh-54-C7U">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TY7-Qc-b7D">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Your Grocery List" id="UYl-pz-n3b"/>
+                                    <navigationItem title="Grocery List" id="czp-TZ-5u4"/>
                                 </items>
                             </navigationBar>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-tX-dZg">
-                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="jwW-RD-MQS"/>
-                                    <tabBarItem title="Home" image="house" catalog="system" id="4Fc-6M-6kj"/>
-                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="5tg-zT-zKY"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="enG-9E-E4U"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Grocery List" image="pencil.and.ellipsis.rectangle" catalog="system" id="wJa-60-3lK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUe-Aa-TqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="-296"/>
+            <point key="canvasLocation" x="1078" y="-1025"/>
         </scene>
-        <!--Inventory View Controller-->
+        <!--Inventory-->
         <scene sceneID="CG1-76-wZh">
             <objects>
                 <viewController id="HXr-4l-2wd" customClass="InventoryViewController" customModule="GroceryHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -190,27 +134,18 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2dn-77-gYV">
-                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="adj-ZV-x6C"/>
-                                    <tabBarItem title="Home" image="house" catalog="system" id="ooP-hR-9Tq"/>
-                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="El4-lr-Acu"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4q8-jg-VIO"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Inventory" image="bag" catalog="system" id="z5x-Zc-eae"/>
                     <navigationItem key="navigationItem" id="n8f-rC-JJl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMy-x1-oyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="98"/>
+            <point key="canvasLocation" x="2273" y="98"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="Q9r-6f-6h2">
             <objects>
                 <viewController id="3wR-gq-RxN" customClass="SettingsViewController" customModule="GroceryHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,27 +160,18 @@
                                     <navigationItem title="Settings" id="obM-MY-7m7"/>
                                 </items>
                             </navigationBar>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nB-ZH-wvb">
-                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="Lhc-zN-E9e"/>
-                                    <tabBarItem title="Home" image="house" catalog="system" id="ygF-oh-erR"/>
-                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="Nrp-K8-pdv"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4lk-t0-J8A"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="HoW-vr-fuu"/>
                     <navigationItem key="navigationItem" id="XEN-2V-dU2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYy-fp-jPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="857"/>
+            <point key="canvasLocation" x="372" y="1100"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorties-->
         <scene sceneID="LcF-zP-sBX">
             <objects>
                 <viewController id="zBB-hO-LUB" customClass="FavoritesViewController" customModule="GroceryHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -265,34 +191,48 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-ae-oPc">
-                                <rect key="frame" x="0.0" y="598" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Back" image="arrow.left" catalog="system" id="7L9-bj-RFZ"/>
-                                    <tabBarItem title="Home" image="house" catalog="system" selectedImage="house" id="Noa-pg-Uly"/>
-                                    <tabBarItem title="Grocery List" image="list.bullet" catalog="system" id="ntg-aM-LfE"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Rf3-Le-Ddd"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Favorties" image="star" catalog="system" id="Uj2-ZW-lIH"/>
                     <navigationItem key="navigationItem" id="WRt-F7-pcg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igy-qm-R7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="514"/>
+            <point key="canvasLocation" x="1078" y="615"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6bx-b8-zen">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaC-lz-qfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6Eb-F2-lOx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="inventorypic" id="zEA-0N-IxP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bQS-UR-pfK"/>
+                        <segue destination="6Pw-fS-wDx" kind="relationship" relationship="viewControllers" id="Bke-w0-UYq"/>
+                        <segue destination="HXr-4l-2wd" kind="relationship" relationship="viewControllers" id="Zc5-sG-Hgl"/>
+                        <segue destination="3wR-gq-RxN" kind="relationship" relationship="viewControllers" id="elj-CK-tTe"/>
+                        <segue destination="zBB-hO-LUB" kind="relationship" relationship="viewControllers" id="XIh-ob-p1s"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-218" y="98"/>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="bag" catalog="system" width="64" height="64"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="inventorypic" width="1501" height="872"/>
         <image name="list" width="588" height="598"/>
-        <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="64" height="40"/>
         <image name="settings-icon-transparent-29.jpg" width="480" height="480"/>
         <image name="star" width="360" height="360"/>
+        <image name="star" catalog="system" width="64" height="58"/>
     </resources>
 </document>
