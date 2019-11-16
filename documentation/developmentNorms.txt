@@ -1,8 +1,11 @@
 Development Norms: 
 
-Swift: We are using Swift for our app user interface. To open the files open the Xcode project in Xcode and use the simulator app to run the program. There are swift files and an Xcode project. 
+HTML: We are using HTML to create a web app. We are hosting the web app on Github.The web app is under the repository grocery-helper.github.io. 
 
-We have two Swift branches right now, the first being willows_layout.detailing the layout of our project. 
+One HTML branch is our master branch the master branch which has our landing page. 
+
+The second HTML branch is our classes branch which is in HTML with embedded php. 
+
 
 The second is classes which documents the classes for our project. 
 
@@ -12,6 +15,8 @@ Use this link <https://remotemysql.com/phpmyadmin/sql.php>
 username: PVhTrKWdPv
 password: FaPy0Vt6oB
 TODO: phpMyAdmin allows us to export a SQL file that can recreate our database; we will include this in our documentation later once our database is fully updated.
+
+We also have a phpScripts branch in our original repository grocery-helper/grocery-helper, that contains the scripts connecting our database to php through phpAdmin, serving as an API. 
 
 
 SQL: We are using a MySQL database, once it is fully up to date we plan on moving it to our repository and updating this documentation. The relationships and entities in the database are demonstrated in the ER diagram in this folder. 
