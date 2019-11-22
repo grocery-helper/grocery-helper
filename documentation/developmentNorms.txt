@@ -2,21 +2,22 @@ Development Norms:
 
 HTML: We are using HTML to create a web app. We are hosting the web app on Github.The web app is under the repository grocery-helper.github.io. 
 
-One HTML branch is our master branch the master branch which has our landing page. 
+One HTML branch is our master branch the master branch which has our landing page (called index.html), login page, help page, and our view lists page.
 
-The second HTML branch is our classes branch which is in HTML with embedded php. 
-
-
-The second is classes which documents the classes for our project. 
-
+As of today we also have Help, NewHelp, and revert-14-help branches. These branches are storing various versions of our home page, so we can see which one ends up both working the best with the back end of the project and is stylistically best. We also have saved the revert-14-help branch just so we can all see how things were set up before the current version so we can remember what did. 
 
 Php: We used RemoteMySQL to host our database on the web so that we can use phpMyAdmin to manage our database.
 Use this link <https://remotemysql.com/phpmyadmin/sql.php>
 username: PVhTrKWdPv
 password: FaPy0Vt6oB
-TODO: phpMyAdmin allows us to export a SQL file that can recreate our database; we will include this in our documentation later once our database is fully updated.
 
-We also have a phpScripts branch in our original repository grocery-helper/grocery-helper, that contains the scripts connecting our database to php through phpAdmin, serving as an API. 
+We also have classes in php in our grocery-helper.github.io repository under a branch called classes. 
+
+Our php scripts that will connect our front end to our database are located in our grocery-helper.github.io repository under phpSQLscripts. 
 
 
-SQL: We are using a MySQL database, once it is fully up to date we plan on moving it to our repository and updating this documentation. The relationships and entities in the database are demonstrated in the ER diagram in this folder. 
+SQL: We used RemoteMySQL to host our database on the web so that we can use phpMyAdmin to manage our database. The username and password are above. The SQL code is not uploaded to our repository, but tables can be accessed through the remoteMySQL website. The relationships and entities in the database are demonstrated in the ER diagram in this folder. 
+
+Our Repositories: 
+
+We have two repositories in our project. One is the host for our web app, and contains files that are necessary to run the website in a browser. The other is our original repository, and it contains our documentation, and other important files. 
